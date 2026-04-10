@@ -1,10 +1,11 @@
 {
   "name": "elevenlabs-s2s-example",
   "version": "0.0.1",
-  "description": "example jambonz websocket application using Elevenlabs's Realtime API",
+  "description": "example jambonz websocket application using ElevenLabs",
   "main": "app.js",
   "scripts": {
     "start": "node app",
+    "build": "npm install",
     "jslint": "eslint app.js lib --fix"
   },
   "author": "Hoan HL",
