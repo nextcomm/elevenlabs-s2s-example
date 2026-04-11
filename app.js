@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 require('./lib/routes')({logger, makeService});
-require('./lib/routes/call-status')({logger, makeService});
+require('./lib/routes/call-status')({ logger, app });
 
 server.listen(port, () => {
   logger.info(`jambonz websocket server listening at http://localhost:${port}`);
